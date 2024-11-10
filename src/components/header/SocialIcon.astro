@@ -1,0 +1,10 @@
+---
+const { src, alt, href } = Astro.props;
+---
+<a href={href} target="_blank" rel="noreferrer">
+    <img 
+        class="custom-img w-6 h-6 mx-1 cursor-pointer transform hover:scale-125 transition duration-200" 
+        src={src} 
+        alt={alt}
+    />
+</a>

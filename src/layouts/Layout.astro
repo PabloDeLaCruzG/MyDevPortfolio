@@ -1,0 +1,28 @@
+---
+import NavTopBar from '../components/header/NavTopBar.astro';
+
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+
+---
+
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body class="dark:bg-custom-gradient min-h-screen dark:text-white font-jost bg-custom-white-gradient text-[#293647] w-full">
+		<div class="flex justify-between items-center p-4">
+            <NavTopBar />
+        </div>
+		<slot />
+	</body>
+</html>

@@ -1,0 +1,16 @@
+---
+import Skill from './Skill.astro';
+import {skills} from '../../data/skills.ts';
+---
+
+<section>
+    <div class="flex items-center mb-4 mt-10">
+        <img class="custom-img w-5 h-5 mr-1" src="/src/assets/icons/starIcon.png" alt="Icono de estrella">
+        <h4 class="font-bold text-lg">Skills</h4>
+    </div>
+    <div class="grid grid-cols-4 gap-4 xs:grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+        {skills.map(skill => (
+            <Skill name={skill.name} src={skill.src} />
+        ))}
+    </div>
+</section>

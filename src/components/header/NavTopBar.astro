@@ -1,0 +1,19 @@
+---
+import NavItems from "./NavItems.astro";
+import ThemeToggle from "./ThemeToggle.astro";
+
+---
+
+<ThemeToggle />
+
+<nav>
+    <ul class="flex space-x-4 text-xs sm:text-base">
+        <NavItems href="/"> Home </NavItems >
+        <NavItems href="#projects"> Projects </NavItems >
+        <NavItems href="#experience"> Experience </NavItems >
+        <NavItems href="#education"> Education </NavItems >
+        <li  class="bg-sec-color rounded-lg px-2 cursor-pointer hover:scale-110 transition duration-200">
+            <a href="#contactme" class=" text-white text-1xl font-bold">Contact</a>
+        </li >
+    </ul>
+</nav>

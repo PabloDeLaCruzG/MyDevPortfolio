@@ -1,0 +1,24 @@
+---
+import SoftSkill from './SoftSkill.astro';
+import {softSkills} from '../../data/softSkills.ts';
+---
+
+<section>
+    <div class="flex items-center mb-4 mt-10">
+        <img class="custom-img w-5 h-5 mr-1" src="/src/assets/icons/userIcon.png" alt="User Icon">
+        <h4 class="font-bold text-lg">About Me</h4>
+    </div>
+
+    <p class="text-justify text-sm leading-relaxed dark:text-gray-200 text-pretty">
+        Hello, I'm Pablo, 20 years old, and I'm passionate about development and technology. 
+        I love staying up to date and continuously learning. I believe I have a solid knowledge base 
+        to collaborate on development projects, and I am currently pursuing a Software Engineering degree 
+        to specialize and expand my skills.
+    </p>
+
+    <div class="grid grid-cols-4 gap-4 xs:grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-3">
+        {softSkills.map(softSkill => (
+            <SoftSkill name={softSkill.name} />
+        ))}
+    </div>
+</section>

@@ -1,0 +1,7 @@
+.custom-img {
+    filter: brightness(0) saturate(100%) invert(12%) sepia(25%) saturate(412%) hue-rotate(177deg) brightness(89%) contrast(90%);
+}
+
+html.dark .custom-img {
+    filter: brightness(0) saturate(100%) invert(100%);
+} 
