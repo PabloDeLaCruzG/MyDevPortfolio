@@ -30,7 +30,7 @@ export default function Carousel({ src }: CarouselProps) {
             className={`duration-700 ease-in-out ${index === currentIndex ? "block" : "hidden"}`}
           >
             <img
-              src={imageSrc}
+              src={imageSrc.src}
               className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
               alt={`Project image ${index + 1}`}
             />

@@ -1,17 +1,33 @@
+import ImageProjectC from '../assets/images/imagesProjectC/image.png';
+import ImageProjectC1 from '../assets/images/imagesProjectC/image (1).png';
+import ImageProjectC2 from '../assets/images/imagesProjectC/image (2).png';
+import ImageProjectC3 from '../assets/images/imagesProjectC/image (3).png';
+import ImageProjectC4 from '../assets/images/imagesProjectC/image (4).png';
+import ImageProjectS1 from '../assets/images/dashboard-sbs-presencia.png';
+
+import JavaIcon from '../assets/icons/java.png';
+import SpringIcon from '../assets/icons/springIcon.png';
+import ReactIcon from '../assets/icons/react.png';
+import JavaScriptIcon from '../assets/icons/jsIcon.png';
+import SQLIcon from '../assets/icons/sql.png';
+import PHPIcon from '../assets/icons/php.png';
+
+
+
 export type ProjectT = {
   id?: number;
   title: string;
   src: {
-    src1: string;
-    src2?: string;
-    src3?: string;
-    src4?: string;
-    src5?: string;
+    src1: ImageMetadata;
+    src2?: ImageMetadata;
+    src3?: ImageMetadata;
+    src4?: ImageMetadata;
+    src5?: ImageMetadata;
   }[];
   description: string;
   languages: {
     alt: string;
-    src: string;
+    src: ImageMetadata;
   }[];
   code?: string;
 };
@@ -22,11 +38,11 @@ export const projects: ProjectT[] = [
     title: "Coachify Fitness",
     src: [
       {
-        src1: "/src/assets/images/imagesProjectC/image.png",
-        src2: "/src/assets/images/imagesProjectC/image (1).png",
-        src3: "/src/assets/images/imagesProjectC/image (2).png",
-        src4: "/src/assets/images/imagesProjectC/image (3).png",
-        src5: "/src/assets/images/imagesProjectC/image (4).png",
+        src1: ImageProjectC,
+        src2: ImageProjectC1,
+        src3: ImageProjectC2,
+        src4: ImageProjectC3,
+        src5: ImageProjectC4,
       }
     ],
     description:
@@ -34,23 +50,23 @@ export const projects: ProjectT[] = [
     languages: [
       {
         alt: "java",
-        src: "/src/assets/icons/java.png",
+        src: JavaIcon,
       },
       {
         alt: "spring",
-        src: "/src/assets/icons/springIcon.png",
+        src: SpringIcon,
       },
       {
         alt: "react",
-        src: "/src/assets/icons/react.png",
+        src: ReactIcon,
       },
       {
         alt: "js",
-        src: "/src/assets/icons/jsIcon.png",
+        src: JavaScriptIcon,
       },
       {
         alt: "sql",
-        src: "/src/assets/icons/sql.png",
+        src: SQLIcon,
       },
     ],
     code: "https://github.com/PabloDeLaCruzG/CoachifyBackEnd"
@@ -60,7 +76,7 @@ export const projects: ProjectT[] = [
     title: "SBS Presencia",
     src: [
       {
-        src1: "/src/assets/images/imagesProjectC/dashboard-sbs-presencia.png",
+        src1: ImageProjectS1,
       }
     ],
     description:
@@ -68,41 +84,41 @@ export const projects: ProjectT[] = [
     languages: [
       {
         alt: "php",
-        src: "/src/assets/icons/php.png",
+        src: PHPIcon,
       },
       {
         alt: "js",
-        src: "/src/assets/icons/jsIcon.png",
+        src: JavaScriptIcon,
       },
       {
         alt: "sql",
-        src: "/src/assets/icons/sql.png",
+        src: SQLIcon,
       },
     ]
   },
-  {
-    id: 3,
-    title: "My Developer Portfolio",
-    src: [
-      {
-        src1: "/src/assets/images/imagesProjectC/dashboard-sbs-presencia.png",
-      }
-    ],
-    description:
-      "My full-stack developer portfolio is a website where I showcase my professional journey in development, my skills, academic background, and the most important projects I have developed. I decided to build this website using Astro, React, and TypeScript. I chose Astro because it’s very suitable for creating static sites and is also quite easy to learn. With React, I created some components that simplified state management, and I used TypeScript as a base to improve code quality.",
-    languages: [
-      {
-        alt: "astro",
-        src: "/src/assets/icons/astro.png",
-      },
-      {
-        alt: "sql",
-        src: "/src/assets/icons/react.png",
-      },
-      {
-        alt: "js",
-        src: "/src/assets/icons/typescript.png",
-      }
-    ]
-  },
+  // {
+  //   id: 3,
+  //   title: "My Developer Portfolio",
+  //   src: [
+  //     {
+  //       src1: "/assets/images/imagesProjectC/dashboard-sbs-presencia.png",
+  //     }
+  //   ],
+  //   description:
+  //     "My full-stack developer portfolio is a website where I showcase my professional journey in development, my skills, academic background, and the most important projects I have developed. I decided to build this website using Astro, React, and TypeScript. I chose Astro because it’s very suitable for creating static sites and is also quite easy to learn. With React, I created some components that simplified state management, and I used TypeScript as a base to improve code quality.",
+  //   languages: [
+  //     {
+  //       alt: "astro",
+  //       src: "/assets/icons/astro.png",
+  //     },
+  //     {
+  //       alt: "sql",
+  //       src: "/assets/icons/react.png",
+  //     },
+  //     {
+  //       alt: "js",
+  //       src: "/assets/icons/typescript.png",
+  //     }
+  //   ]
+  // },
 ];

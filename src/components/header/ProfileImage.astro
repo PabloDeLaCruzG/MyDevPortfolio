@@ -1,8 +1,9 @@
 ---
-
+import { Image } from 'astro:assets';
+import ProvisionalProfile from '../../assets/images/perfilProvisional.png';
 ---
-<img 
-    src="/src/assets/images/perfilProvisional.png" 
+<Image 
+    src={ProvisionalProfile} 
     alt="Foto de perfil" 
     class="w-48 h-32 lg:w-48 lg:h-48 object-contain"
 />

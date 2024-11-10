@@ -1,5 +1,6 @@
 import type { ProjectT } from "../../data/Projects";
 import Carousel from "./Carousel";
+import GithubIconW from '../../assets/icons/gitIconW.png';
 
 type CarouselModalProps = {
   isOpen: boolean;
@@ -73,7 +74,7 @@ export default function CarouselModal({
               <img
                 key={index}
                 className="w-5 h-5 md:w-6 md:h-6 mx-1 custom-img"
-                src={language.src}
+                src={language.src.src}
                 alt={language.alt}
               />
             ))}
@@ -90,14 +91,11 @@ export default function CarouselModal({
               <a href={code} target="_blank" rel="noreferrer">
                 <button className="flex flex-row items-center bg-sec-color text-white p-2 rounded-lg shadow-md hover:bg-sec-color-dark transition-transform transform hover:scale-105">
                   <img
-                    style={{
-                      filter: "brightness(0) saturate(100%) invert(100%)",
-                    }}
                     className="w-4 h-4 md:w-5 md:h-5 mr-1"
-                    src="/src/assets/icons/githubIcon.png"
+                    src={GithubIconW.src}
                     alt="Icono de código"
                   />
-                  <p className="text-sm">Ver Código</p>
+                  <p className="text-sm">View Code</p>
                 </button>
               </a>
             </div>

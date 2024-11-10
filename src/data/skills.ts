@@ -1,21 +1,34 @@
+import TypeScriptIcon from '../assets/icons/typescript.png';
+import ReactIcon from '../assets/icons/react.png';
+import JavaIcon from '../assets/icons/java.png';
+import SpringIcon from '../assets/icons/springIcon.png';
+import PHPIcon from '../assets/icons/php.png';
+import JavaScriptIcon from '../assets/icons/jsIcon.png';
+import NodeIcon from '../assets/icons/nodeIcon.png';
+import AstroIcon from '../assets/icons/astro.png';
+import NextIcon from '../assets/icons/next.png';
+import SQLIcon from '../assets/icons/sql.png';
+import MongoDBIcon from '../assets/icons/mongodb.png';
+import GitIcon from '../assets/icons/gitIconW.png';
+import OpenProjectIcon from '../assets/icons/openprojectIcon.png';
 
 type SkillsT = {
     name: string;
-    src: string;
+    src: ImageMetadata;
 }
 
-export const skills : SkillsT[] = [
-    { name: 'TypeScript', src: '/src/assets/icons/typescript.png'},
-    { name: 'React', src: '/src/assets/icons/react.png'},
-    { name: 'Java', src: '/src/assets/icons/java.png'},
-    { name: 'Spring', src: '/src/assets/icons/springIcon.png'},
-    { name: 'PHP', src: '/src/assets/icons/php.png' },
-    { name: 'JavaScript', src: '/src/assets/icons/jsIcon.png'},
-    { name: 'Node', src: '/src/assets/icons/nodeIcon.png'},
-    { name: 'Astro', src: '/src/assets/icons/astro.png'},
-    { name: 'Next', src: '/src/assets/icons/next.png'},
-    { name: 'SQL', src: '/src/assets/icons/sql.png'},
-    { name: 'MongoDB', src: '/src/assets/icons/mongodb.png'},
-    { name: 'Git', src: '/src/assets/icons/gitIconW.png'},
-    { name: 'OpenProject', src: '/src/assets/icons/openprojectIcon.png'}
+export const skills: SkillsT[] = [
+    { name: 'TypeScript', src: TypeScriptIcon },
+    { name: 'React', src: ReactIcon },
+    { name: 'Java', src: JavaIcon },
+    { name: 'Spring', src: SpringIcon },
+    { name: 'PHP', src: PHPIcon },
+    { name: 'JavaScript', src: JavaScriptIcon },
+    { name: 'Node', src: NodeIcon },
+    { name: 'Astro', src: AstroIcon },
+    { name: 'Next', src: NextIcon },
+    { name: 'SQL', src: SQLIcon },
+    { name: 'MongoDB', src: MongoDBIcon },
+    { name: 'Git', src: GitIcon },
+    { name: 'OpenProject', src: OpenProjectIcon }
 ];

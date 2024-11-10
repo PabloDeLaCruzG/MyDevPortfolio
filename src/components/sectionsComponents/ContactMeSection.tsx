@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import emailjs from '@emailjs/browser';
+import EmailIcon from '../../assets/icons/tlfIcon.png';
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
@@ -46,7 +47,7 @@ export default function ContactForm() {
       <div className="flex items-center mb-4 mt-10">
         <img
           className="custom-img w-5 h-5 mr-1"
-          src="/src/assets/icons/tlfIcon.png"
+          src={EmailIcon.src}
           alt="Icono de usuario"
         />
         <h4 className="font-bold text-lg">Contact me</h4>

@@ -1,10 +1,12 @@
 ---
+import { Image } from 'astro:assets';
 import StudyItem from "./StudyItem.astro";
+import StudyIcon from '../../assets/icons/studyIcon.png';
 ---
 
 <section id="education">
     <div class="flex items-center mb-4 mt-10 custom-img">
-        <img class="w-5 h-5 mr-1" src="/src/assets/icons/studyIcon.png" alt="Icono de trabajo">
+        <Image class="w-5 h-5 mr-1" src={StudyIcon} alt="Icono de trabajo" />
         <h4 class="font-bold text-lg">Studies</h4>
     </div>
     

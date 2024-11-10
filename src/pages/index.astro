@@ -9,6 +9,9 @@ import StudiesSection from "../components/sectionsComponents/StudiesSection.astr
 import AboutMeSection from "../components/sectionsComponents/AboutMeSection.astro";
 import ContactMeSection from "../components/sectionsComponents/ContactMeSection.tsx";
 import '../components/ImgTheme.css';
+
+import GithubIcon from '../assets/icons/githubIcon.png';
+import LinkedinIcon from '../assets/icons/linkedinIcon.png';
 ---
 
 <Layout title="My Portfolio">
@@ -22,8 +25,8 @@ import '../components/ImgTheme.css';
         <p class="text-base lg:text-xl mt-2 lg:ml-5">Dénia, Alicante, Spain</p>  
 
         <div class="flex justify-center lg:justify-start space-x-4 mt-3 lg:mt-2 lg:ml-4">
-          <SocialIcon src="/src/assets/icons/githubIcon.png" alt="Github Icon" href="https://github.com/PabloDeLaCruzG" />
-          <SocialIcon src="/src/assets/icons/linkedinIcon.png" alt="Linkedin Icon" href="https://www.linkedin.com/in/pablo-de-la-cruz-0b1278226/" />
+          <SocialIcon src={GithubIcon} alt="Github Icon" href="https://github.com/PabloDeLaCruzG" />
+          <SocialIcon src={LinkedinIcon} alt="Linkedin Icon" href="https://www.linkedin.com/in/pablo-de-la-cruz-0b1278226/" />
         </div>
       </div>
 
@@ -54,7 +57,7 @@ import '../components/ImgTheme.css';
       <div class="flex flex-col lg:flex-row justify-between items-center lg:mx-5">
         <p class="text-sm text-gray-500 sm:text-center dark:text-gray-400">✉️ pablodelacruzgomez48@gmail.com</p>
         <span
-          class="block text-sm text-gray-500 sm:text-center dark:text-gray-400"
+          class="block text-sm text-gray-500 sm:text-center dark:text-gray-400 order-last lg:order-none text-center"
           translate="no"
         >
         
@@ -82,13 +85,3 @@ import '../components/ImgTheme.css';
     </div>
   </footer>
 </Layout>
-
-<style>
-  .custom-img {
-      filter: brightness(0) saturate(100%) invert(12%) sepia(25%) saturate(412%) hue-rotate(177deg) brightness(89%) contrast(90%);
-  }
-
-  html.dark .custom-img {
-      filter: brightness(0) saturate(100%) invert(100%);
-  } 
-</style>

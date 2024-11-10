@@ -3,6 +3,7 @@ import ProjectCard from "./ProjectCard";
 import { projects } from "../../data/Projects";
 import type { ProjectT } from "../../data/Projects";
 import ProjectModal from "./ProjectModal";
+import FolderIcon from '../../assets/icons/folderIcon.png';
 
 export default function ProjectSection () {
   
@@ -24,7 +25,7 @@ export default function ProjectSection () {
       <div className="flex items-center mb-4 mt-10">
         <img
           className="custom-img w-5 h-5 mr-1"
-          src="/src/assets/icons/folderIcon.png"
+          src={FolderIcon.src}
           alt="Icono de trabajo"
         />
         <h4 className="font-bold text-lg">Projects</h4>

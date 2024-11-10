@@ -11,7 +11,7 @@ export default function ProjectCard ({ src, description, languages, onClick }: P
       onClick={onClick}
     >
       <div className="relative">
-        <img className="h-48 w-full object-cover rounded-lg" src={src[0].src1} alt="Proyecto" />
+        <img className="h-48 w-full object-cover rounded-lg" src={src[0].src1.src} alt="Proyecto" />
         <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 transition duration-300 flex items-center justify-center">
           <span className="text-white text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
             Ver más detalles
@@ -23,7 +23,7 @@ export default function ProjectCard ({ src, description, languages, onClick }: P
           <img
             key={index}
             className="w-6 h-6 mx-1"
-            src={language.src}
+            src={language.src.src}
             alt={language.alt}
           />
         ))}

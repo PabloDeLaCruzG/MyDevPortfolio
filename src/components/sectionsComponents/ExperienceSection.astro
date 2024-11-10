@@ -1,11 +1,13 @@
 ---
+import { Image } from 'astro:assets';
 import ExperienceItem from "./ExperienceItem.astro";
+import WorkIcon from '../../assets/icons/workIcon.png';
 ---
 
 <section id="experience">
     <!-- Sección Experiencia -->
     <div class="flex items-center mb-4 mt-10 custom-img">
-        <img class="w-5 h-5 mr-1" src="/src/assets/icons/workIcon.png" alt="Icono de trabajo">
+        <Image class="w-5 h-5 mr-1" src={WorkIcon} alt="Icono de trabajo" />
         <h4 class="font-bold text-lg">Professional Experience</h4>
     </div>
     

@@ -1,11 +1,13 @@
 ---
+import { Image } from 'astro:assets';
 import SoftSkill from './SoftSkill.astro';
 import {softSkills} from '../../data/softSkills.ts';
+import UserIcon from '../../assets/icons/userIcon.png';
 ---
 
 <section>
     <div class="flex items-center mb-4 mt-10">
-        <img class="custom-img w-5 h-5 mr-1" src="/src/assets/icons/userIcon.png" alt="User Icon">
+        <Image class="custom-img w-5 h-5 mr-1" src={UserIcon} alt="User Icon"/>
         <h4 class="font-bold text-lg">About Me</h4>
     </div>
 
