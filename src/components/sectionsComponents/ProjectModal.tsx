@@ -1,6 +1,6 @@
 import type { ProjectT } from "../../data/Projects";
 import Carousel from "./Carousel";
-import GithubIconW from '../../assets/icons/gitIconW.png';
+import GithubIconW from "../../assets/icons/gitIconW.png";
 
 type CarouselModalProps = {
   isOpen: boolean;
@@ -10,6 +10,7 @@ type CarouselModalProps = {
   languages: ProjectT["languages"];
   src: ProjectT["src"];
   code: ProjectT["code"];
+  url: ProjectT["url"];
 };
 
 export default function CarouselModal({
@@ -20,8 +21,11 @@ export default function CarouselModal({
   languages,
   src,
   code,
+  url,
 }: CarouselModalProps) {
   if (!isOpen) return null;
+
+  console.log("src", url);
 
   return (
     <div
@@ -60,7 +64,7 @@ export default function CarouselModal({
             <span className="sr-only">Cerrar modal</span>
           </button>
         </div>
-        
+
         {/* Contenido del Modal */}
         <div className="p-3 space-y-4">
           {/* Carousel */}
@@ -98,6 +102,13 @@ export default function CarouselModal({
                   <p className="text-sm">View Code</p>
                 </button>
               </a>
+              {url && (
+                <a href={url} target="_blank" rel="noreferrer">
+                  <button className="flex flex-row items-center bg-sec-color text-white p-2 rounded-lg shadow-md hover:bg-sec-color-dark transition-transform transform hover:scale-105 ml-2">
+                    <p className="text-sm">View Project</p>
+                  </button>
+                </a>
+              )}
             </div>
           )}
         </div>

@@ -54,6 +54,7 @@ export default function ProjectSection () {
           languages={selectedProject.languages}
           src={selectedProject.src}
           code={selectedProject.code}
+          url={selectedProject.url}
         />
       )}
     </section>
